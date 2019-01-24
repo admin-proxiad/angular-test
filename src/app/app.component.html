@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-12">
+          <img class="rounded mx-auto d-block" href="#" src="../assets/img/PROXIAD.png" alt="Proxiad" />
+    </div>
+    <div class="col-md-12">
+        <div class="nav d-flex justify-content-center">
+            <ul>
+                <li *ngFor="let link of links" [ngClass]="{ 'underline': isRouterLinkActive(link.key)}" routerLink="{{link.key}}">{{ link.value }}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="main-content">
+    <router-outlet></router-outlet>
+</div>

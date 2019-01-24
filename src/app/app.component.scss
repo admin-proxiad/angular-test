@@ -1,0 +1,31 @@
+.nav {
+	background-color: #40caee;
+	height: 30px;
+
+	ul {
+
+		li {
+			list-style: none;
+			display: inline-block;
+			margin-top: 2px;
+			margin-right: 50px;
+      cursor: pointer;
+
+      &.underline {
+        color: #fff;
+      }
+		}
+
+		li:hover {
+			color: #fff;
+    }
+	}
+
+	.second-part {
+			background-color: #192a3d;
+	}
+}
+
+.main-content {
+	margin: 50px 100px;
+}

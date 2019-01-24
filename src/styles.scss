@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '../node_modules/angular-notifier/styles.css';
+
+body,
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+table {
+	width: 100%;
+}
+
+.sub-content {
+	margin-top: 50px;
+}
+
+.button {
+    background-color: #40caee;
+    float: right;
+    margin-bottom: 50px;
+
+    .mat-icon {
+        vertical-align: initial !important;
+    }
+}
+
+.page-title {
+    display: inline-block;
+}

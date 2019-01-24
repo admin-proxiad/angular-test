@@ -1,0 +1,14 @@
+.card {
+  cursor: pointer;
+
+  &.first-card {
+    margin-top: 30px;
+  }
+
+  &.other-card {
+    margin-top: 15px;
+  }
+}
+
+
+

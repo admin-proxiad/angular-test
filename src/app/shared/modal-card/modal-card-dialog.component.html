@@ -1,0 +1,24 @@
+<h2 mat-dialog-title>Détails</h2>
+
+<div class="card-margin" mat-dialog-content>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{ data.card.title }}</mat-card-title>
+      <mat-card-subtitle>{{ data.card.card_header.subtitle }}</mat-card-subtitle>
+    </mat-card-header>
+    <img class="image rounded mx-auto d-block" mat-card-image src="{{ data.card.card_background_image }}" alt="{{ data.card.card_header.title }}">
+    <mat-card-content>
+      <p>
+        {{ data.card.card_content.content }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions class="text-center">
+      <button *ngFor="let button of data.card.card_button" mat-button>{{ data.button.button_title }}</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<div class="dialog-buttons" mat-dialog-actions>
+    <button mat-button class="mat-raised-button" (click)="close()">Close</button>
+</div>
